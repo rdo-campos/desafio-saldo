@@ -1,0 +1,23 @@
+POST http://localhost:8080/balances/events
+Content-Type: application/json
+
+{
+  "transaction": {
+    "id": "8e8ae808-b154-48b5-9f3e-553935cc4543",
+    "type": "CREDIT",
+    "amount": 5000,
+    "currency": "BRL",
+    "status": "APPROVED",
+    "timestamp": 200
+  },
+  "account": {
+    "id": "123-456-789",
+    "owner": "315e3cfe-f4af-4cd2-b298-a449e614349a",
+    "created_at": "1634874339",
+    "status": "ENABLED",
+    "balance": {
+      "amount": 5000,
+      "currency": "BRL"
+    }
+  }
+}

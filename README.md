@@ -66,8 +66,11 @@ Spring Boot Actuator habilitado. <br>
 Endpoints disponíveis:
 - /actuator/health<br>
 <img width="765" height="966" alt="img_3" src="https://github.com/user-attachments/assets/0cd6772e-c3be-42ad-8128-3a3a5d60a183" />
+<br>
 - /actuator/metrics <br>
-![img_4.png](img_4.png) <br>
+<img width="905" height="1032" alt="img_4" src="https://github.com/user-attachments/assets/3fd68489-84bf-4ecf-8cc4-caa840705b0d" />
+
+<br>
 <br><br>
 
 <h4>LOGS:</h4> Adicionamos no console logs para recebimento de eventos, criação de contas, atualização de saldos e rejeição de eventos com datas antigas
@@ -102,4 +105,4 @@ O arquivo dockercompose enviado no desafio, gera a fila CONTA-BANCARIA-CRIADA, q
 
 A lógica de processamento está correta (validar e só aceitar atualizações de saldo com data recente), porém, para entrar em ambiente de produção, seria necessário adaptar/validar a leitura dos eventos corretamente.
 <br>
-![img_5.png](img_5.png)cccsdada
+![img_5.png](img_5.png)

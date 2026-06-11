@@ -75,7 +75,7 @@ Endpoints disponíveis:
 
 <h4>LOGS:</h4> Adicionamos no console logs para recebimento de eventos, criação de contas, atualização de saldos e rejeição de eventos com datas antigas
 <br><br>
-  <h4>TESTES:</h4> Implementados testes unitários para:
+  <h4>TESTES:</h4> Implementados testes unitários para:<br>
 1) Conta inexistente;<br>
 2) Evento antigo não atualizar o saldo;<br>
 3) Evento novo atualizar o saldo.<br>

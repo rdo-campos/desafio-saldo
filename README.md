@@ -16,7 +16,7 @@ A aplicação foi desenvolvida utilizando:<br>
 
 <h4>CAMADAS:</h4>
 - Controller: exposição dos endpoints<br>
-- Service: regras de negócios<br>
+- Service: regras de negócio<br>
 - Repository: acesso aos dados<br>
 - Entity: representação das tabelas<br>
 - DTO: objetos de entrada e saída<br>
@@ -56,8 +56,8 @@ GET account/count<br>
 
 
 <br> <br>
-<h4>REGRAS DE NEGÓCIOS:</h4> 
-- Eventos mais antigos não sobrescrevem eventos existentes mais recentes (regra feita por timestamp)
+<h4>REGRAS DE NEGÓCIO:</h4> 
+- Eventos mais antigos não sobrescrevem eventos existentes mais recentes (regra feita por timestamp)<br>
 - Contas inexistentes na base de saldo são criadas automaticamente ao receber um evento válido
 <br><br>
 
@@ -90,9 +90,9 @@ Endpoints disponíveis:
 
 <br><br>
 <h4>DECISÕES TÉCNICAS:</h4>
-- Optamos por utilizar o POSTGRESQL ao invés de um banco NoSQL. Por ser um sistema crítico, e seguindo a referência (teorema CAP e ACID/BASE), um sistema de Contas deve ser Consistente e ter Tolerância - não podemos ter uma consistencia eventual... nesse sentido, o Postgresql atende melhor ao que precisamos.<br>
+- Optamos por utilizar o POSTGRESQL ao invés de um banco NoSQL. Por ser um sistema crítico, e seguindo a referência (teorema CAP e ACID/BASE), um sistema de Contas deve ser Consistente e ter Tolerância - não podemos ter uma consitência eventual... nesse sentido, o Postgresql atende melhor ao que precisamos.<br>
 - Por ter volume alto e ser sistema crítico, optamos por utilizar ECS ao invés de Lambda (possível problema de coldstart, embora possa ser contornado com algumas estratégias)<br>
-- Utilizamos o timestamp para garantir que transações antigas liberadas pelo Autorizador nãp sobrescrevam o saldo correto do cliente <br>
+- Utilizamos o timestamp para garantir que transações antigas liberadas pelo Autorizador não sobrescrevam o saldo correto do cliente <br>
 - O projeto está utilizando o Hibernate, então as tabelas são criadas de acordo com o nosso projeto. No ambiente do banco, entendemos que essa forma não funcionaria - pois existem processo específicos de governança para criação/atualização de tabelas <br>
 - Uso do Spring Boot Actuator para observabilidade<br>
 - Separação do projeto em camadas: Controller, Service e Repository<br>

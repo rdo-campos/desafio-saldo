@@ -22,7 +22,7 @@ A aplicação foi desenvolvida utilizando:<br>
 - DTO: objetos de entrada e saída<br>
 <br><br>
 
-<h4>ARQUITETURA ALVO</h4>:
+<h4>ARQUITETURA ALVO:</h4>
 O desenho (drawio) está com a arquitetura ideal, com filas, retry e DLQ.
 Nessa versão do projeto, a implementação ainda não possui essa inteligencia de tratamento de eventos com erro.
 
@@ -38,7 +38,7 @@ Nessa versão do projeto, a implementação ainda não possui essa inteligencia 
 <br>
 <br>
 
-<h4>ENDPOINTS</h4>
+<h4>ENDPOINTS:</h4>
 
 1. Consulta de saldo: <br>
 GET /balances/{accountid} <br> 
@@ -66,7 +66,7 @@ Spring Boot Actuator habilitado. <br>
 Endpoints disponíveis:
 - /actuator/health<br>
 <img width="765" height="966" alt="img_3" src="https://github.com/user-attachments/assets/0cd6772e-c3be-42ad-8128-3a3a5d60a183" />
-<br>
+<br><br>
 - /actuator/metrics <br>
 <img width="905" height="1032" alt="img_4" src="https://github.com/user-attachments/assets/3fd68489-84bf-4ecf-8cc4-caa840705b0d" />
 
@@ -104,5 +104,5 @@ Embora o desenho da arquitetura considere o consumo via fila SQS, o projeto est�
 O arquivo dockercompose enviado no desafio, gera a fila CONTA-BANCARIA-CRIADA, que somente cria as contas - e não simula o Autorizador.<br>
 
 A lógica de processamento está correta (validar e só aceitar atualizações de saldo com data recente), porém, para entrar em ambiente de produção, seria necessário adaptar/validar a leitura dos eventos corretamente.
-<br>
+<br><br>
 ![img_5.png](img_5.png)

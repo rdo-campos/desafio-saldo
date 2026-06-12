@@ -53,6 +53,7 @@ Execução via gitbash:<br>  curl -X POST http://localhost:8080/balances/events 
 
 3) Contagem de registros no banco: <br>
 GET account/count<br>
+<img width="712" height="210" alt="image" src="https://github.com/user-attachments/assets/156c1e35-c06d-4a8c-929a-44fa8b4c3a81" />
 
 
 <br> <br>
